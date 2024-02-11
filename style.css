@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./image/japon.jpg) center/cover;
+  min-height: 100vh;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 200px;
+  text-align: center;
+}
+.header {
+  min-width: 50%;
+}
+
+.header .titre {
+  padding: 0 30px;
+  background-color: rgba(255, 255, 255, 0.221);
+}
+
+.header .titre h1 {
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header .reponse {
+  padding: 10px 30px;
+  background-color: rgba(139, 0, 139, 0.316);
+  font-size: 1.5rem;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.615);
+  min-width: 50%;
+  height: 350px;
+  margin-top: 20px;
+  padding: 0 0 10px 0;
+}
+
+.container .mot-recherche {
+  padding: 10px;
+}
+
+.container .mot-recherche #mot {
+  font-size: 1.7rem;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+
+.mauvaise-lettres {
+  background-color: rgba(70, 70, 70, 0.541);
+  color: rgb(255, 251, 251);
+  padding: 10px 20px;
+  min-width: 50%;
+  font-size: 1.3rem;
+}
+
+.mauvaise-lettres p {
+  margin-bottom: 5px;
+}
+
+.container-lettres {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  margin: 20px 0 10px 0;
+}
+
+.container-lettres .lettres {
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid rgb(191, 110, 123);
+  cursor: pointer;
+  font-size: 1rem;
+  /* text-transform: uppercase; */
+}
+
+.container-lettres .lettres:hover {
+  background-color: rgba(227, 227, 227, 0.714);
+}
+
+.partie {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border: 1px solid rgb(220, 146, 222);
+  background-color: rgba(0, 0, 0, 0.395);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.partie:hover {
+  color: rgb(220, 146, 222);
+  border: 1px solid white;
+}
